@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MOVEPAL SA | Smooth Moves, Every Time</title>
+
+<style>
+
+.box, .form-container, .service-box{
+background: rgba(255,255,255,0.97);
+}
+
+/* BACKGROUND */
+body{
+font-family: Arial, sans-serif;
+margin:0;
+background: url('https://images.pexels.com/photos/4246264/pexels-photo-4246264.jpeg') no-repeat center center fixed;
+background-size: cover;
+}
+
+/* OVERLAY */
+.overlay{
+background: rgba(0,0,0,0.65);
+min-height:100vh;
+color:white;
+}
+
+/* NAVBAR */
+.navbar ul{
+list-style:none;
+display:flex;
+justify-content:center;
+gap:30px;
+padding:10px;
+margin:0;
+}
+
+.navbar a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+cursor:pointer;
+}
+
+.navbar a:hover{
+text-decoration:underline;
+}
+
+/* HEADER */
+header{
+text-align:center;
+padding:30px 20px;
+}
+
+header h1{
+font-size:40px;
+margin-bottom:5px;
+}
+
+/* SECTIONS */
+section{
+display:none;
+padding:20px 20px 50px;
+max-width:1000px;
+margin:auto;
+}
+
+#home{
+display:block;
+}
+
+h2{
+text-align:center;
+}
+
+/* CARDS */
+.box{
+background: rgba(255,255,255,0.95);
+color:black;
+padding:20px;
+border-radius:10px;
+box-shadow:0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* SERVICES */
+.services{
+display:grid;
+grid-template-columns:1fr 1fr 1fr;
+gap:20px;
+}
+
+.service-box{
+background: rgba(255,255,255,0.95);
+color:black;
+padding:20px;
+border-radius:10px;
+text-align:center;
+}
+
+/* FORM */
+.form-container{
+background: rgba(255,255,255,0.95);
+color:black;
+padding:25px;
+border-radius:10px;
+}
+
+input, select, textarea{
+width:100%;
+padding:12px;
+margin-top:10px;
+margin-bottom:15px;
+border:1px solid #ccc;
+border-radius:6px;
+}
+
+button{
+background:#0d6efd;
+color:white;
+border:none;
+padding:14px;
+width:100%;
+border-radius:6px;
+font-size:16px;
+cursor:pointer;
+}
+
+button:hover{
+background:#0b5ed7;
+}
+
+/* WHATSAPP */
+.whatsapp{
+display:block;
+text-align:center;
+background:#25D366;
+color:white;
+padding:14px;
+margin-top:15px;
+border-radius:6px;
+text-decoration:none;
+font-weight:bold;
+}
+
+/* FOOTER */
+footer{
+text-align:center;
+color:white;
+padding:20px;
+margin-top:40px;
+}
+
+/* MOBILE */
+@media(max-width:700px){
+.services{
+grid-template-columns:1fr;
+}
+.navbar ul{
+flex-direction:column;
+gap:10px;
+}
+}
+/* CHATBOT BUTTON */
+.chatbot-button{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#0d6efd;
+color:white;
+padding:15px 20px;
+border-radius:50px;
+cursor:pointer;
+font-weight:bold;
+box-shadow:0 4px 12px rgba(0,0,0,0.3);
+z-index:999;
+}
+
+/* CHATBOT BOX */
+.chatbot-box{
+display:none;
+position:fixed;
+bottom:80px;
+right:20px;
+width:320px;
+background:white;
+color:black;
+border-radius:12px;
+box-shadow:0 4px 20px rgba(0,0,0,0.3);
+overflow:hidden;
+z-index:999;
+}
+
+.chatbot-header{
+background:#0d6efd;
+color:white;
+padding:15px;
+font-weight:bold;
+}
+
+.chatbot-body{
+padding:15px;
+max-height:250px;
+overflow-y:auto;
+font-size:14px;
+}
+
+.chatbot-options{
+padding:15px;
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+.chatbot-options button{
+padding:10px;
+border:none;
+background:#25D366;
+color:white;
+border-radius:6px;
+cursor:pointer;
+}
+
+</style>
+</head>
+
+<body>
+<div class="overlay">
+
+<header>
+
+<nav class="navbar">
+<ul>
+<li><a onclick="showSection('home')">Home</a></li>
+<li><a onclick="showSection('services')">Services</a></li>
+<li><a onclick="showSection('about')">About Us</a></li>
+<li><a onclick="showSection('contact')">Book Now</a></li>
+<li><a href="Partner.html">Partner With Us</a></li>
+<li><a onclick="showSection('contactus')">Contact Us</a></li>
+</ul>
+</nav>
+
+<h1>MOVEPAL SA</h1>
+<p>Smooth Moves, Every Time</p>
+
+</header>
+
+<!-- HOME -->
+<section id="home">
+<h2>Welcome to MOVEPAL SA</h2>
+<p style="text-align:center;">Smooth Moves, Every Time</p>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+<h2>About Us</h2>
+<div class="box">
+
+<p>At MOVEPAL SA, we believe moving shouldn’t be stressful—it should be smooth, fast, and reliable.</p>
+
+<ul>
+<li>🚚 Fast & Convenient</li>
+<li>🛡️ Trusted Movers</li>
+<li>💰 Affordable Pricing</li>
+<li>📱 Smart Platform</li>
+</ul>
+
+<h3>Our Mission</h3>
+<p>The mission of MovePal SA is to provide safe, reliable, affordable, and professional moving services that make relocation simple and stress-free for individuals, families, students, businesses, and property clients across South Africa. We are committed to connecting customers with trusted moving partners while delivering excellent service, transparent pricing, and dependable support throughout every move.</p>
+
+<h3>Our Vision</h3>
+<p>The vision of MovePal SA is to become South Africa’s leading moving and logistics platform by building a trusted network of drivers, agents, estates, and business partners nationwide. We aim to be the first choice for customers looking for a convenient, technology-driven, and customer-focused moving solution.</p>
+
+<h3>Our Commitment</h3>
+<p>We guarantee:</p>
+<ul>
+<li>Punctuality and professionalism</li>
+<li>Respect for estate rules and security protocols</li>
+<li>Careful handling of all items</li>
+<li>Clear communication with residents and management</li>
+</ul>
+
+<h3>Risk Management</h3>
+
+<p>At MovePal SA, the safety of our customers, their belongings, and our moving teams is our top priority. We work with verified drivers and trusted moving partners, ensure that vehicles are checked before every move, and use proper loading, packing, and handling procedures to reduce the risk of damage or delays. Customers receive clear quotations, transparent pricing, and regular communication throughout the moving process so that there are no hidden surprises.</p>
+<p>To further protect our customers, we have procedures in place for damaged items, delays, cancellations, and lost goods. We recommend that customers declare any high-value or fragile items before the move so that additional care can be taken. By maintaining these standards, MovePal SA aims to provide a safe, reliable, and professional moving experience every time.</p>
+
+</div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+<h2>Our Services</h2>
+
+<div class="services">
+
+<div class="service-box">
+<h3>Local Moving</h3>
+<p>Quick moves within your city.</p>
+</div>
+
+<div class="service-box">
+<h3>Long Distance</h3>
+<p>Move across provinces safely.</p>
+</div>
+
+<div class="service-box">
+<h3>Moving Out</h3>
+<p>Perfect for apartments and houses.</p>
+</div>
+
+</div>
+
+<br><br>
+
+<div class="box">
+<h3>Services Offered</h3>
+
+<p>MovePal SA provides the following services:</p>
+
+<ul>
+<li> Labour-only moving</li>
+<li> Full household relocations</li>
+<li> Office moves</li>
+<li>Moving Out + Cleaning</li>
+<li>Moving Out + Packaging</li>
+<li>Moving Out Ki</li>
+<li> Single-item delivery</li>
+</ul>
+</div>
+
+<br><br>
+</div>
+</section>
+
+<!-- BOOKING -->
+<section id="contact">
+<h2 style="color: white;">Request a Move</h2>
+
+<div class="box">
+<h3>Our Starting Prices</h3>
+<ul>
+<li>Local Move — From R450</li>
+<li>Long Distance — From R800</li>
+<li>Moving Out — From R1000</li>
+<li>Moving Out + Cleaning — From R2150</li>
+<li>Moving Out + Packaging — From R2200</li>
+<li>Moving Out Kit (Moving + Cleaning + Packaging) — From R2700</li>
+<li>Labour Only — From R250</li>
+<li>Home Relocation — From R4000</li>
+<li>Office Relocation — Custom Quote</li>
+</ul>
+</div>
+
+<br>
+
+<div class="form-container">
+
+<form action="https://formsubmit.co/info@movepalsa.co.za" method="POST">
+
+<input type="text" name="Name" placeholder="Full Name" required>
+<input type="tel" name="Phone" placeholder="Phone Number" required>
+
+<select id="service" name="Service" onchange="calculatePrice()">
+<option>Local Move</option>
+<option>Long Distance</option>
+<option>Moving Out</option>
+</select>
+
+<label><strong>
+Please list all the items you would like us to move so we can give you an accurate quote.
+Include large items such as beds, couches, wardrobes, fridges, washing machines, TVs, tables, desks, and appliances.
+</strong></label>
+
+<textarea name="Items List" rows="6" placeholder="Example: 2 beds, couch set, fridge, washing machine, TV stand, dining table..." required></textarea>
+
+<input type="text" name="Pickup Address" placeholder="Pickup Address" required>
+<input type="text" name="Delivery Address" placeholder="Delivery Address" required>
+
+<input type="date" name="Date" required>
+<input type="time" name="Time" required>
+
+<h3 id="price">Estimated Price: R500</h3>
+
+<button type="submit">Confirm Booking</button>
+
+</form>
+
+<a class="whatsapp" href="https://wa.me/27797499144">
+Chat on WhatsApp
+</a>
+
+</div>
+</section>
+
+<!-- CONTACT US -->
+<section id="contactus">
+<h2>Contact Us</h2>
+
+<div class="box" style="text-align:center;">
+<p>📞 Phone:</p>
+<a href="tel:0797499144">079 749 9144</a>
+
+<p style="margin-top:20px;">📧 Email:</p>
+<a href="mailto:info@movepalsa.co.za">info@movepalsa.co.za</a>
+</div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+<p>© 2026 MOVEPAL SA | Smooth Moves, Every Time</p>
+<img src="Logo.jpg" alt="MOVEPAL SA Logo" style="width:300px; margin-top:10px;">
+</footer>
+
+</div>
+
+<!-- AI CHATBOT BUTTON -->
+<div class="chatbot-button" onclick="toggleChatbot()">
+💬 Contact Us
+</div>
+
+<!-- CHATBOT BOX -->
+<div class="chatbot-box" id="chatbotBox">
+
+<div class="chatbot-header">
+MovePal AI Support
+<span onclick="toggleChatbot()" style="float:right; cursor:pointer;">✖</span>
+</div>
+
+<div class="chatbot-body" id="chatBody">
+<p><strong>AI Assistant:</strong> Hi 👋 Welcome to MovePal SA. How can we help you today?</p>
+</div>
+
+<div class="chatbot-options">
+<button onclick="sendMessage('Booking Help')">Booking Help</button>
+<button onclick="sendMessage('Agent Partnership')">Agent Partnership</button>
+<button onclick="sendMessage('Driver Partnership')">Driver Partnership</button>
+<button onclick="sendMessage('Pricing')">Pricing</button>
+<a href="https://wa.me/27797499144" target="_blank">
+<button>WhatsApp Support</button>
+</a>
+</div>
+
+</div>
+
+<script>
+function showSection(sectionId){
+  let sections = document.querySelectorAll("section");
+  sections.forEach(section => section.style.display = "none");
+  document.getElementById(sectionId).style.display = "block";
+}
+function calculatePrice() {
+  let service = document.getElementById("service").value;
+  let base = 450;
+
+  if(service === "Long Distance") base = 800;
+  if(service === "Moving Out") base = 1000;
+  if(service === "Moving Out + Cleaning") base = 2150;
+  if(service === "Moving Out + Packaging") base = 2200;
+  if(service === "Moving Out Kit") base = 2700;
+  if(service === "Labour Only") base = 250;
+  if(service === "Home Relocation") base = 4000;
+  if(service === "Office Relocation") base = 5000;
+
+  document.getElementById("price").innerText = "Estimated Price: From R" + base;
+}
+</script>
+<script>
+function toggleChatbot(){
+let chatbot = document.getElementById("chatbotBox");
+chatbot.style.display = chatbot.style.display === "block" ? "none" : "block";
+}
+
+function sendMessage(topic){
+let chatBody = document.getElementById("chatBody");
+let response = "";
+
+if(topic === "Booking Help"){
+response = "To book a move, complete the Request a Move form and we’ll contact you.";
+}
+else if(topic === "Agent Partnership"){
+response = "Agents can earn referral income by joining our partner network.";
+}
+else if(topic === "Driver Partnership"){
+response = "Drivers can apply to receive moving jobs and grow their transport business.";
+}
+else if(topic === "Pricing"){
+response = "Pricing depends on service type, distance, and load size.";
+}
+
+chatBody.innerHTML += "<p><strong>You:</strong> " + topic + "</p>";
+chatBody.innerHTML += "<p><strong>AI Assistant:</strong> " + response + "</p>";
+chatBody.scrollTop = chatBody.scrollHeight;
+}
+</script>
+
+</body>
+</html>
